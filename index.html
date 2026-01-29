@@ -1,72 +1,80 @@
-<style>
-  body {
-    margin: 0;
-    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-    background: #7A4A1E;
-    color: #3A2A1A;
-  }
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel PGD – MIR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  header {
-    padding: 30px 20px;
-    text-align: center;
-    background: #9C6B3D;
-    color: #ffffff;
-  }
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background: linear-gradient(135deg, #6b3f1d, #8a5a2b, #a4713a);
+      color: #ffffff;
+    }
 
-  header h1 {
-    margin: 0;
-    font-size: 2.2em;
-    font-weight: 600;
-  }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      background: rgba(58, 34, 14, 0.85);
+      backdrop-filter: blur(4px);
+    }
 
-  header p {
-    max-width: 1000px;
-    margin: 15px auto 0;
-    font-size: 1.05em;
-    line-height: 1.6;
-    color: #F3E6D8;
-  }
-
-  main {
-    padding: 30px 20px;
-    display: flex;
-    justify-content: center;
-    background: #EAD6C0;
-  }
-
-  .dashboard-container {
-    width: 100%;
-    max-width: 1400px;
-    background: #F3E6D8;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
-    padding: 12px;
-    border: 3px solid #9C6B3D;
-  }
-
-  iframe {
-    width: 100%;
-    height: 80vh;
-    border: none;
-    border-radius: 4px;
-    background: #ffffff;
-  }
-
-  footer {
-    text-align: center;
-    padding: 15px;
-    font-size: 0.85em;
-    background: #7A4A1E;
-    color: #F3E6D8;
-  }
-
-  @media (max-width: 768px) {
     header h1 {
-      font-size: 1.6em;
+      margin: 0;
+      font-size: 2.2em;
+      font-weight: 600;
+      color: #f5e6d3;
+    }
+
+    header p {
+      max-width: 900px;
+      margin: 15px auto 0;
+      font-size: 1.05em;
+      line-height: 1.6;
+      color: #ead6c0;
+    }
+
+    main {
+      padding: 30px 20px;
+      display: flex;
+      justify-content: center;
+      background: #e8d4bd;
+    }
+
+    .dashboard-container {
+      width: 100%;
+      max-width: 1200px;
+      background: #f4e6d8;
+      border-radius: 12px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+      padding: 15px;
+      border: 3px solid #8a5a2b;
     }
 
     iframe {
-      height: 70vh;
+      width: 100%;
+      height: 80vh;
+      border: none;
+      border-radius: 8px;
+      background: #ffffff;
     }
-  }
-</style>
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.85em;
+      background: #6b3f1d;
+      color: #f0e0cc;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      iframe {
+        height: 70vh;
+      }
+    }
+  </style>
