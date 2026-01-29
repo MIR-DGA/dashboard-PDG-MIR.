@@ -1,103 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Painel PGD – MIR</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #7A4A1E;
+    color: #3A2A1A;
+  }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-    }
+  header {
+    padding: 30px 20px;
+    text-align: center;
+    background: #9C6B3D;
+    color: #ffffff;
+  }
 
-    header {
-      padding: 30px 20px;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.35);
-      backdrop-filter: blur(6px);
-    }
+  header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+  }
 
+  header p {
+    max-width: 1000px;
+    margin: 15px auto 0;
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #F3E6D8;
+  }
+
+  main {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    background: #EAD6C0;
+  }
+
+  .dashboard-container {
+    width: 100%;
+    max-width: 1400px;
+    background: #F3E6D8;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    padding: 12px;
+    border: 3px solid #9C6B3D;
+  }
+
+  iframe {
+    width: 100%;
+    height: 80vh;
+    border: none;
+    border-radius: 4px;
+    background: #ffffff;
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.85em;
+    background: #7A4A1E;
+    color: #F3E6D8;
+  }
+
+  @media (max-width: 768px) {
     header h1 {
-      margin: 0;
-      font-size: 2.2em;
-    }
-
-    header p {
-      max-width: 900px;
-      margin: 15px auto 0;
-      font-size: 1.05em;
-      line-height: 1.6;
-      color: #dcdcdc;
-    }
-
-    main {
-      padding: 30px 20px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .dashboard-container {
-      width: 100%;
-      max-width: 1200px;
-      background: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-      padding: 15px;
+      font-size: 1.6em;
     }
 
     iframe {
-      width: 100%;
-      height: 80vh;
-      border: none;
-      border-radius: 12px;
+      height: 70vh;
     }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 0.85em;
-      color: #cccccc;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.6em;
-      }
-
-      iframe {
-        height: 70vh;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <h1>Painel de Acompanhamento – PGD</h1>
-    <p>
-      O Programa de Gestão por Desempenho (PGD) fundamenta-se na definição prévia
-      de metas, atividades e entregas, com critérios objetivos de mensuração,
-      promovendo transparência, controle e avaliação do desempenho individual e
-      das unidades organizacionais.
-    </p>
-  </header>
-
-  <main>
-    <div class="dashboard-container">
-      <iframe 
-        src="https://app.powerbi.com/view?r=eyJrIjoiMTM4MDE0YmItNmUwOS00N2YwLWJmYzYtOTg3YjFkNGU0NDJjIiwidCI6ImZiYTViMTc4LTNhZjEtNDQyMC05NjZiLWJmNTE2M2U2YjFkYSJ9"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </main>
-
-  <footer>
-    © 2026 – Painel PGD | MIR
-  </footer>
-
-</body>
-</html>
+  }
+</style>
