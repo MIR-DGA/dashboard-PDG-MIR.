@@ -1,31 +1,103 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Dashboard PGD - Processos Trabalhados</title>
+  <meta charset="UTF-8">
+  <title>Painel PGD – MIR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+    }
+
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(6px);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    header p {
+      max-width: 900px;
+      margin: 15px auto 0;
+      font-size: 1.05em;
+      line-height: 1.6;
+      color: #dcdcdc;
+    }
+
+    main {
+      padding: 30px 20px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #f0f2f5;
     }
+
+    .dashboard-container {
+      width: 100%;
+      max-width: 1200px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      padding: 15px;
+    }
+
     iframe {
-      border: none;
-      width: 90vw;
+      width: 100%;
       height: 80vh;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.85em;
+      color: #cccccc;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      iframe {
+        height: 70vh;
+      }
     }
   </style>
 </head>
+
 <body>
-  <iframe 
-    title="Relatório - Planos -Trabalho PGD MIR. Final" 
-    src="https://app.powerbi.com/view?r=eyJrIjoiMTM4MDE0YmItNmUwOS00N2YwLWJmYzYtOTg3YjFkNGU0NDJjIiwidCI6ImZiYTViMTc4LTNhZjEtNDQyMC05NjZiLWJmNTE2M2U2YjFkYSJ9" 
-    allowfullscreen="true">
-  </iframe>
+
+  <header>
+    <h1>Painel de Acompanhamento – PGD</h1>
+    <p>
+      O Programa de Gestão por Desempenho (PGD) fundamenta-se na definição prévia
+      de metas, atividades e entregas, com critérios objetivos de mensuração,
+      promovendo transparência, controle e avaliação do desempenho individual e
+      das unidades organizacionais.
+    </p>
+  </header>
+
+  <main>
+    <div class="dashboard-container">
+      <iframe 
+        src="https://app.powerbi.com/view?r=eyJrIjoiMTM4MDE0YmItNmUwOS00N2YwLWJmYzYtOTg3YjFkNGU0NDJjIiwidCI6ImZiYTViMTc4LTNhZjEtNDQyMC05NjZiLWJmNTE2M2U2YjFkYSJ9"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 – Painel PGD | MIR
+  </footer>
+
 </body>
 </html>
